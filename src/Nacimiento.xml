@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+    <xsd:schema id="nota" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <xsd:element name="persona" id="tipoPersona" use="required">
+            <xsd:attribute name="nacimiento" type="xsd:date" use="required"/>
+            <xsd:element name="datos" id="info">
+                <xsd:attribute name="nombre" type="xsd:string" use="required" maxLength="1"/>
+                <xsd:attribute name="apellidos" type="xsd:string" use="required" maxLength="1"/>
+                <xsd:attribute name="dni" type="xsd:integer" use="required" maxLength="1"/>
+            </xsd:element>
+            <xsd:attribute name="comentario" type="xsd:string" use="optional" maxLength="1"/>
+        </xsd:element>
+    </xsd:schema>
+<persona nacimiento="1999-10-20">
+    <datos>
+        <nombre>Pepe</nombre>
+        <apellidos>Garcia</apellidos>
+        <dni>25390952</dni>
+    </datos>
+    <comentario>buena gente...</comentario>
+</persona>
+</xml>

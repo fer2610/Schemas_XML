@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+<xsd:schema id="nota" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:attribute name="para" type="xsd:string" use="required" maxLength="1"/>
+            <xsd:attribute name="de" type="xsd:string" use="required" maxLength="1"/>
+            <xsd:attribute name="titulo" type="xsd:string" use="required" maxLength="1"/>
+            <xsd:attribute name="contenido" type="xsd:string" use="required" maxLength="1"/>
+</xsd:schema>
+<nota>
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>A las 7:00 pm en la puerta del teatro</contenido>
+</nota>
+</xml>

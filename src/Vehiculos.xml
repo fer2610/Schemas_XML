@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+<xsd:schema id="vehiculos" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="vehiculo" use="required" minLength="1" maxLength="undefined">
+        <xsd:attribute name="nombre" type="xsd:string" use="required" minLength="1" maxLength="undefined"/>
+        <xsd:attribute name="modelo" type="xsd:string" use="required" maxLength="1"/>
+        <xsd:element name="fabricacion" use="required">
+        <xsd:element name="inicio" use="required">
+            <xsd:attribute name="dia" type="xsd:integer" use="required" maxLength="1"/>
+            <xsd:attribute name="mes" type="xsd:string" use="required" maxLength="1"/>
+            <xsd:attribute name="anyo" type="xsd:integer" use="required" maxLength="1"/>
+        </xsd:element>
+        <xsd:element name="fin" use="required">
+            <xsd:attribute name="dia" type="xsd:integer" use="required" maxLength="1"/>
+            <xsd:attribute name="mes" type="xsd:string" use="required" maxLength="1"/>
+            <xsd:attribute name="anyo" type="xsd:integer" use="required" maxLength="1"/>
+        </xsd:element>
+    </xsd:element>
+    <xsd:element name="modificaciones" use="required" maxLength="1">
+        <xsd:attribute name="modificaciones" type="xsd:string" use="required" minLength="1" maxLength="undefined"/>
+    </xsd:element>
+    </xsd:element>
+</xsd:schema>
+<vehiculos>
+    <vehiculo>
+        <nombre>Count Zero</nombre>
+        <modelo>Series I, 80"</modelo>
+        <fabricacion>
+            <inicio>
+                <dia>21</dia>
+                <mes>July</mes>
+                <anyo>1949</anyo>
+            </inicio>
+            <fin>
+                <dia>9</dia>
+                <mes>August</mes>
+                <anyo>1949</anyo>
+            </fin>
+        </fabricacion>
+        <modificaciones>
+            <modificacion>Change Engine</modificacion>
+            <modificacion>Change pedals</modificacion>
+            <modificacion>Change gearbox</modificacion>
+            <modificacion>Fit Rollcage</modificacion>
+        </modificaciones>
+    </vehiculo>
+</vehiculos>
+</xml>
